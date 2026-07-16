@@ -40,3 +40,6 @@ fit the actual project.
   orientation before touching a repo you haven't worked in recently.
 - [`dependency-upgrade-request.md`](templates/dependency-upgrade-request.md) —
   structured handling of a "bump this dependency" request.
+- [`plan-knowledge-ecosystem.md`](templates/plan-knowledge-ecosystem.md) —
+  decide what belongs in git-based agent-facing files vs. a separate
+  personal knowledge system, and how the two should relate.
