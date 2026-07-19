@@ -49,3 +49,7 @@ fit the actual project.
 - [`infrastructure-audit-and-change.md`](templates/infrastructure-audit-and-change.md) —
   safely audit and evolve an infrastructure environment without assuming a
   particular platform, service, or deployment tool.
+
+## License
+
+[MIT](LICENSE)
