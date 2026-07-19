@@ -49,6 +49,22 @@ fit the actual project.
 - [`infrastructure-audit-and-change.md`](templates/infrastructure-audit-and-change.md) —
   safely audit and evolve an infrastructure environment without assuming a
   particular platform, service, or deployment tool.
+- [`python-dependency-locking.md`](templates/python-dependency-locking.md) —
+  move a Python application from unpinned transitive resolution to a locked,
+  reproducible install across dev, CI, and production.
+- [`publish-to-open-source.md`](templates/publish-to-open-source.md) —
+  decide whether a private repository should go public, and the P0/P1
+  checklist to get through once rather than patching gaps afterward.
+- [`vps-ops-baseline.md`](templates/vps-ops-baseline.md) — produce or refresh
+  the recurring ops runbook shape (baseline, resource guardrails, log/disk
+  hygiene) for a service on a small single-host VPS.
+- [`codebase-audit.md`](templates/codebase-audit.md) — structure for an
+  independent, evidence-backed codebase audit: method, finding write-up
+  shape, severity classification, and suggested lenses.
+- [`deployment-script-guardrails.md`](templates/deployment-script-guardrails.md) —
+  patterns for a deployment script that make a wrong-environment deploy hard
+  to do by accident: environment markers, deployment-state tracking,
+  locking, and pre-replace validation.
 
 ## License
 
