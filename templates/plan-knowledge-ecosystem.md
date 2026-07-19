@@ -1,12 +1,11 @@
 # Plan the personal knowledge/instruction ecosystem
 
 ## Context
-Agent-facing operational content currently lives across multiple git repos:
-dotfiles (global AGENTS.md, symlinked to Codex/Claude/Grok), agent-playbooks
-(reusable task templates), and each project's own AGENTS.md. This works
-because coding agents read files from disk/repos automatically — nothing
-else (an Obsidian vault, a wiki) gets loaded into an agent's context without
-being explicitly pointed at it.
+Agent-facing operational content can live across multiple git repositories:
+a global-instructions repository, a reusable-playbooks repository, and each
+project's own instruction files. This works only when the active coding agent
+is configured to load those files; a wiki or personal knowledge base must be
+explicitly connected before an agent can rely on it.
 
 ## Goal
 Decide whether this git-based "ecosystem of files" is the right long-term
@@ -25,9 +24,9 @@ content goes where.
 - What's the actual maintenance cost of each option — keeping several
   project AGENTS.md files in sync with one global template, vs. also
   keeping a vault in sync with the git repos?
-- Do the existing repos already imply a natural boundary (dotfiles =
-  machine config, agent-playbooks = task templates, per-project AGENTS.md =
-  project specifics) that a PKM layer would sit alongside rather than
+- Do the existing repositories imply a natural boundary (global instructions
+  = shared workflow, playbooks = reusable task templates, project instructions
+  = project specifics) that a PKM layer would sit alongside rather than
   replace?
 
 ## Constraints

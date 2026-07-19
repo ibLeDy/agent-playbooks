@@ -25,15 +25,15 @@ is installed.
   rules (branch/worktree discipline, etc.) — the meta-work doesn't get a pass.
 
 ## Decision-making
-Ask before any important decision or general-direction/design choice. Also
-surface small, low-level polish decisions — don't silently pick for me; I want
-to know the project well enough to fine-tune it myself.
+Ask before any important scope, direction, security, cost, or design choice.
+For routine low-level polish, make the best compatible choice and report it
+concisely so it can be refined without blocking the work.
 
 ## Provider file limits
 Some coding-agent providers cap instruction-file size (e.g. Codex). For each
 targeted provider: confirm the current limit (verify, don't assume from
-memory), record it with the date checked and that provider's update cadence so
-we know when to recheck, and if content won't fit, surface the trade-off
+memory), record it with the date checked and a recheck trigger when one is
+published, and if content won't fit, surface the trade-off
 (split / link out / drop lower-priority guidance) rather than truncating
 silently.
 

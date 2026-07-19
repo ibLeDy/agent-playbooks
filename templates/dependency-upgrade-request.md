@@ -11,8 +11,8 @@
 ## Process
 1. Isolate the upgrade in its own branch/worktree — don't bundle it with
    unrelated changes.
-2. Apply the bump, update the lockfile, and run the full test suite (not
-   just lint/type-check) before considering it done.
+2. Apply the bump, update the lockfile if the project uses one, and run the
+   full test suite (not just lint/type-check) before considering it done.
 3. If anything breaks: decide whether it's a real incompatibility to fix or
    a reason to hold off, and report either way rather than forcing it
    through.

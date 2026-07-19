@@ -19,9 +19,12 @@ fit the actual project.
 - **Token-conscious.** No rigid mandates to always parallelize, always spawn
   subagents, or always produce extra artifacts — conditional on the task
   actually benefiting from it.
-- **Consult before deciding.** Templates default to surfacing decisions and
-  asking, not silently picking a direction — matches how this account's
-  projects are actually run.
+- **Consult on material choices.** Templates surface decisions that materially
+  affect scope, risk, cost, security, or architecture; routine implementation
+  choices should be stated clearly rather than needlessly blocking progress.
+- **Publication-safe.** Use placeholders for identities, domains, hosts,
+  credentials, and topology. Keep a concrete environment plan with the repo
+  that owns that environment, not here.
 
 ## Templates
 
@@ -43,3 +46,6 @@ fit the actual project.
 - [`plan-knowledge-ecosystem.md`](templates/plan-knowledge-ecosystem.md) —
   decide what belongs in git-based agent-facing files vs. a separate
   personal knowledge system, and how the two should relate.
+- [`infrastructure-audit-and-change.md`](templates/infrastructure-audit-and-change.md) —
+  safely audit and evolve an infrastructure environment without assuming a
+  particular platform, service, or deployment tool.
