@@ -6,8 +6,9 @@ any change, without re-deriving everything from scratch every time.
 
 ## Steps
 
-1. Read the repo's own `AGENTS.md`/`CLAUDE.md`/`GEMINI.md` in full before
-   anything else — assume it overrides generic defaults for a reason.
+1. Discover which instruction-file names and precedence rules the active agent
+   supports. Read the applicable repository instructions in full before
+   acting; do not assume similarly named files all apply or have equal weight.
 2. Check recent history: the last ~15 commits, open PRs, and any issues
    flagged for attention.
 3. Check for an existing task status file or design doc, if the repo uses

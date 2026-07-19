@@ -12,8 +12,9 @@
   rewrite it if the implementation moved since it was drafted.
 
 ## Cleanup (after merge)
-- Fast-forward the primary worktree to updated trunk; don't edit project
-  files there.
+- If the primary worktree is clean and already on trunk, fast-forward it to
+  updated trunk; otherwise leave it untouched and verify against the remote
+  tracking trunk. Don't edit project files there.
 - Stop any branch-specific stack (Compose project, port-forward, scratch
   session) before removing the worktree.
 - Remove only this feature's worktree; delete the merged local branch (and
