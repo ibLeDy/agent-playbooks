@@ -32,5 +32,13 @@ only what is actually specific to this repo.
    precedence; read each applicable instruction file in full.
 2. Explore the repo: manifests, test/lint config, CI, existing docs.
 3. Draft sections only for what's genuinely project-specific.
-4. Ask before finalizing anything about deployment/production behavior
+4. Write the real content to `AGENTS.md`, then symlink every other
+   agent's instruction filename to it (`CLAUDE.md`, `GEMINI.md`, and any
+   other filename this project's agents actually use) so the repo has one
+   source of truth instead of copies that can drift out of sync. Track the
+   symlinks in git alongside the real file. Only skip a symlink for an
+   agent whose docs confirm it doesn't recognize that filename at all
+   (verify, don't assume) or the repo already uses a fallback-filename
+   config to cover it.
+5. Ask before finalizing anything about deployment/production behavior
    that was inferred rather than confirmed directly.
