@@ -1,5 +1,13 @@
 # AGENTS.md size and drift audit
 
+> If the active agent supports the `SKILL.md` standard and has the
+> `agent-instruction-files` skill available (linked from `dotfiles`'
+> `skills/` directory into `~/.claude/skills/` or `~/.agents/skills/`),
+> invoke that skill instead of pasting this template — it carries this same
+> procedure natively, kept in sync with the global file it audits. Use this
+> template as-is for an agent without skill support, or to hand the task to
+> someone working outside an agent session.
+
 ## Goal
 Check whether this repo's `AGENTS.md`, combined with the global template, is
 healthy: under current provider size caps, not needlessly bloated even where
